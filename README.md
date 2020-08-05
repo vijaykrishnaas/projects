@@ -1,2 +1,2 @@
-# projects.github.io
+# projects
 to list some projects
