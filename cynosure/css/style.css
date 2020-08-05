@@ -1,0 +1,55 @@
+html,body{
+    width:100%;
+	/*background:url("../home-1080x2340.jpg");*/
+    height:100%;
+	margin:0 auto;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active:focus{
+    outline:none;
+}
+.cool-link {
+    display: inline-block;
+    color: #88e1f2;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #88e1f2;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    background-color: #ffffff;
+    transition: width .3s;
+}
+.iconify{
+  background: url('https://api.iconify.design/ion-list-circle-outline.svg') no-repeat center center / contain;
+  background-size: 100% 100%;
+  color: #88e1f2;
+  width:50px;
+  height:50px;
+}
+.hameid-loader-overlay {
+        width: 100%;
+        height: 100%;
+        background: url("../images/giphy1.gif") center no-repeat #030303;
+        z-index: 99999;
+        position: fixed;
+    }
+
+.navbar-toggler{
+    background-color: rgb(0,0,0,0.5);
+    padding:40px;
+}
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}

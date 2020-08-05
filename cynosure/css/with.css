@@ -1,0 +1,90 @@
+
+body{
+  background:url("../images/with.png");
+
+}
+.navbar-toggler:focus,
+.navbar-toggler:active:focus{
+    outline:none;
+}
+.iconify{
+  background: url('https://api.iconify.design/ion-list-circle-outline.svg') no-repeat center center / contain;
+  background-size: 100% 100%;
+  color: #88e1f2;
+  width:50px;
+  height:50px;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #88e1f2;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #88e1f2;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+#tit{
+  font-family: 'Marck Script', cursive;
+  font-family: 'Cookie', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Vidaloka', serif;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Fondamento', cursive;
+  font-family: 'Berkshire Swash', cursive;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: #fb0091;
+  text-shadow: 2px 3px #61f2f5;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.hameid-loader-overlay {
+        width: 100%;
+        height: 100%;
+        background: url("C:/Users/user/OneDrive/Desktop/Final/images/giphy3.gif") center no-repeat #1B1B1B;
+
+        z-index: 99999;
+        position: fixed;
+    }
+#name{
+  font-family: 'Marck Script', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Vidaloka', serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Fondamento', cursive;
+color:#8105d8;
+text-shadow: 2px 2px #12cad6;
+font-size: 30px;
+}
+
+
+}
+#tit1{
+  font-family: 'Marck Script', cursive;
+  font-family: 'Cookie', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Vidaloka', serif;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Fondamento', cursive;
+  font-family: 'Berkshire Swash', cursive;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: #fb0091;
+  text-shadow: 2px 2px #61f2f5;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
