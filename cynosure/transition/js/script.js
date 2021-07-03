@@ -1,5 +1,5 @@
 window.onload = init;
-console.ward = function() {}; // what warnings?
+console.ward = function () { }; // what warnings?
 
 function init() {
   var root = new THREERoot({
@@ -12,50 +12,50 @@ function init() {
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 62);
 
-  var width=240;
-  var height=120;
+  var width = 240;
+  var height = 120;
 
-  if(window.innerWidth <600){
-     width=62
-     height=104
-      var slide = new Slide(width, height, 'out');
-    	var l1 = new THREE.ImageLoader();
-    	l1.load('home-mobile.jpg', function(img) {
-    	  slide.setImage(img);
-    	})
-      root.scene.add(slide);
+  if (window.innerWidth < 600) {
+    width = 62
+    height = 104
+    var slide = new Slide(width, height, 'out');
+    var l1 = new THREE.ImageLoader();
+    l1.load('home-mobile.jpg', function (img) {
+      slide.setImage(img);
+    })
+    root.scene.add(slide);
 
-      var slide2 = new Slide(width, height, 'in');
-      var l2 = new THREE.ImageLoader();
-    	l2.load(' home-mobile.jpg', function(img) {
-    		slide2.setImage(img);
-    	})
+    var slide2 = new Slide(width, height, 'in');
+    var l2 = new THREE.ImageLoader();
+    l2.load(' home-mobile.jpg', function (img) {
+      slide2.setImage(img);
+    })
   }
   else {
-      var slide = new Slide(width, height, 'out');
-    	var l1 = new THREE.ImageLoader();
-    	l1.load(' home-final.jpg', function(img) {
-    	  slide.setImage(img);
-    	})
-      root.scene.add(slide);
+    var slide = new Slide(width, height, 'out');
+    var l1 = new THREE.ImageLoader();
+    l1.load(' home-final.jpg', function (img) {
+      slide.setImage(img);
+    })
+    root.scene.add(slide);
 
-      var slide2 = new Slide(width, height, 'in');
-      var l2 = new THREE.ImageLoader();
-    	l2.load(' home-final.jpg', function(img) {
-    		slide2.setImage(img);
-    	})
+    var slide2 = new Slide(width, height, 'in');
+    var l2 = new THREE.ImageLoader();
+    l2.load(' home-final.jpg', function (img) {
+      slide2.setImage(img);
+    })
   }
 
   root.scene.add(slide2);
 
-  var tl = new TimelineMax({repeat:-1, repeatDelay:1.0, yoyo: true});
+  var tl = new TimelineMax({ repeat: -1, repeatDelay: 1.0, yoyo: true });
 
   tl.add(slide.transition(), 0);
   tl.add(slide2.transition(), 0);
 
   createTweenScrubber(tl);
 
-  window.addEventListener('keyup', function(e) {
+  window.addEventListener('keyup', function (e) {
     if (e.keyCode === 80) {
       tl.paused(!tl.paused());
     }
@@ -135,7 +135,7 @@ function Slide(width, height, animationPhase) {
     }
 
     for (v = 0; v < 6; v += 2) {
-      aAnimation.array[i2 + v]     = delayX + delayY + (Math.random() * stretch * duration);
+      aAnimation.array[i2 + v] = delayX + delayY + (Math.random() * stretch * duration);
       aAnimation.array[i2 + v + 1] = duration;
     }
 
@@ -154,19 +154,19 @@ function Slide(width, height, animationPhase) {
     }
 
     for (v = 0; v < 9; v += 3) {
-      aStartPosition.array[i3 + v]     = startPosition.x;
+      aStartPosition.array[i3 + v] = startPosition.x;
       aStartPosition.array[i3 + v + 1] = startPosition.y;
       aStartPosition.array[i3 + v + 2] = startPosition.z;
 
-      aControl0.array[i3 + v]     = control0.x;
+      aControl0.array[i3 + v] = control0.x;
       aControl0.array[i3 + v + 1] = control0.y;
       aControl0.array[i3 + v + 2] = control0.z;
 
-      aControl1.array[i3 + v]     = control1.x;
+      aControl1.array[i3 + v] = control1.x;
       aControl1.array[i3 + v + 1] = control1.y;
       aControl1.array[i3 + v + 2] = control1.z;
 
-      aEndPosition.array[i3 + v]     = endPosition.x;
+      aEndPosition.array[i3 + v] = endPosition.x;
       aEndPosition.array[i3 + v + 1] = endPosition.y;
       aEndPosition.array[i3 + v + 2] = endPosition.z;
     }
@@ -177,7 +177,7 @@ function Slide(width, height, animationPhase) {
       shading: THREE.FlatShading,
       side: THREE.DoubleSide,
       uniforms: {
-        uTime: {type: 'f', value: 0}
+        uTime: { type: 'f', value: 0 }
       },
       shaderFunctions: [
         THREE.BAS.ShaderChunk['cubic_bezier'],
@@ -225,13 +225,13 @@ Object.defineProperty(Slide.prototype, 'time', {
   }
 });
 
-Slide.prototype.setImage = function(image) {
+Slide.prototype.setImage = function (image) {
   this.material.uniforms.map.value.image = image;
   this.material.uniforms.map.value.needsUpdate = true;
 };
 
-Slide.prototype.transition = function() {
-  return TweenMax.fromTo(this, 3.0, {time:0.0}, {time:this.totalDuration, ease:Power0.easeInOut});
+Slide.prototype.transition = function () {
+  return TweenMax.fromTo(this, 3.0, { time: 0.0 }, { time: this.totalDuration, ease: Power0.easeInOut });
 };
 
 
@@ -251,15 +251,15 @@ SlideGeometry.prototype.bufferPositions = function () {
     var b = this.modelGeometry.vertices[face.b];
     var c = this.modelGeometry.vertices[face.c];
 
-    positionBuffer[face.a * 3]     = a.x - centroid.x;
+    positionBuffer[face.a * 3] = a.x - centroid.x;
     positionBuffer[face.a * 3 + 1] = a.y - centroid.y;
     positionBuffer[face.a * 3 + 2] = a.z - centroid.z;
 
-    positionBuffer[face.b * 3]     = b.x - centroid.x;
+    positionBuffer[face.b * 3] = b.x - centroid.x;
     positionBuffer[face.b * 3 + 1] = b.y - centroid.y;
     positionBuffer[face.b * 3 + 2] = b.z - centroid.z;
 
-    positionBuffer[face.c * 3]     = c.x - centroid.x;
+    positionBuffer[face.c * 3] = c.x - centroid.x;
     positionBuffer[face.c * 3 + 1] = c.y - centroid.y;
     positionBuffer[face.c * 3 + 2] = c.z - centroid.z;
   }
@@ -342,7 +342,7 @@ var utils = {
     return b + ease.getRatio(t / d) * c;
   },
   fibSpherePoint: (function () {
-    var vec = {x: 0, y: 0, z: 0};
+    var vec = { x: 0, y: 0, z: 0 };
     var G = Math.PI * (3 - Math.sqrt(5));
 
     return function (i, n, radius) {
@@ -386,11 +386,11 @@ function createTweenScrubber(tween, seekSpeed) {
   seekSpeed = seekSpeed || 0.001;
 
   function stop() {
-    TweenMax.to(tween, 1, {timeScale:0});
+    TweenMax.to(tween, 1, { timeScale: 0 });
   }
 
   function resume() {
-    TweenMax.to(tween, 1, {timeScale:1});
+    TweenMax.to(tween, 1, { timeScale: 1 });
   }
 
   function seek(dx) {
@@ -406,18 +406,18 @@ function createTweenScrubber(tween, seekSpeed) {
   var mouseDown = false;
   document.body.style.cursor = 'pointer';
 
-  window.addEventListener('mousedown', function(e) {
+  window.addEventListener('mousedown', function (e) {
     mouseDown = true;
     document.body.style.cursor = 'ew-resize';
     _cx = e.clientX;
     stop();
   });
-  window.addEventListener('mouseup', function(e) {
+  window.addEventListener('mouseup', function (e) {
     mouseDown = false;
     document.body.style.cursor = 'pointer';
     resume();
   });
-  window.addEventListener('mousemove', function(e) {
+  window.addEventListener('mousemove', function (e) {
     if (mouseDown === true) {
       var cx = e.clientX;
       var dx = cx - _cx;
@@ -427,16 +427,16 @@ function createTweenScrubber(tween, seekSpeed) {
     }
   });
   // mobile
-  window.addEventListener('touchstart', function(e) {
+  window.addEventListener('touchstart', function (e) {
     _cx = e.touches[0].clientX;
     stop();
     e.preventDefault();
   });
-  window.addEventListener('touchend', function(e) {
+  window.addEventListener('touchend', function (e) {
     resume();
     e.preventDefault();
   });
-  window.addEventListener('touchmove', function(e) {
+  window.addEventListener('touchmove', function (e) {
     var cx = e.touches[0].clientX;
     var dx = cx - _cx;
     _cx = cx;

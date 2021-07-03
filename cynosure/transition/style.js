@@ -1,5 +1,5 @@
 document.write(window.innerWidth);
-if(window.innerWidth <800){
+if (window.innerWidth < 800) {
     document.write("hello small");
 }
 else {

@@ -1,208 +1,218 @@
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<title>Event Handlers</title>
- </head>
-  <body>
-  <div class="container pt-5">
-  <div class="table-responsive" style="background-color:#f6f4e6">
-  <table class="table table-hover">
-    <thead class="thead-dark">
-    <tr>
-      <th scope="col">S.No</th>
-      <th scope="col">Committee</th>
-      <th scope="col">Faculty Incharge</th>
-       <th scope="col">Final Year</th>
-	  <th scope="col">Third Year</th>
-	  <th scope="col">Second Year</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Financial</td>
-      <td>Faculty Incharge- Tekace</td>
-      <td>Secretary & Treasurer</td>
-	  <td>Joint Secretary & Joint Treasurer</td>
-	  <td>Additional Joint Secretary & Additional Joint Treasurer</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Auditing</td>
-      <td>Faculty Incharge- Tekace</td>
-	  <td>Secretary & Treasurer</td>
-	  <td>Joint Secretary & Joint Treasurer</td>
-	  <td>Additional Joint Secretary & Additional Joint Treasurer</td>
-    </tr>
-	<tr>
-      <th scope="row">3</th>
-      <td>Momento,Badge,Invitation,Brochure</td>
-      <td>Ms.D.Bettenna Sheryl Fernando</td>
-	  <td>Swetha & Pooja</td>
-	  <td>Srivarsha & Gayathri</td>
-	  <td>Harshini & Shymala</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Certificate</td>
-      <td>Ms.K.Saranya</td>
-	  <td>Kaviya Sri Samyuktha</td>
-	  <td>Shivaranjini,Binitha,Praveena</td>
-	  <td>Mounika & Swetha</td>
-    </tr>
-	<tr>
-      <th scope="row">5</th>
-      <td>Newsletter</td>
-      <td>Mr.S.Oswalt Manoj</td>
-	  <td>Keertha & Swetha</td>
-	  <td>DevaDharshini & Vishal</td>
-	  <td>Harshitha & Vigneshwaran</td>
-    </tr>
-	<tr>
-      <th scope="row">6</th>
-      <td>Discipline</td>
-      <td>Mr.Jim Mathew Philip</td>
-	  <td>Velmurugan & Santhoshini</td>
-	  <td>Sathya & TamilSelvan</td>
-	  <td>Balasubramanian & Vishnuraj</td>
-    </tr>
-	<tr>
-      <th scope="row">7</th>
-      <td>Catering</td>
-      <td>Mr.S.Rajesh & Ms.P.Parameshwari</td>
-	  <td>Dhiyanesh & Santhosh</td>
-	  <td>Thiruppathi & Sanjay</td>
-	  <td>Karthik & Raju</td>
-    </tr>
-	<tr>
-      <th scope="row">8</th>
-      <td>Hall Arrangement,Decoration</td>
-      <td>Ms.M.Kirubha</td>
-	  <td>Ashwadthy & Akshara</td>
-	  <td>Binitha & Gayathri & Swetha & Shivaranjini</td>
-	  <td>Shibu & Gayathri</td>
-    </tr>
-	<tr>
-      <th scope="row">9</th>
-      <td>Reception And Regitration</td>
-      <td>Ms.KM.Kirthika</td>
-	  <td>Jeevitha & Narmadha</td>
-	  <td>Samyuuktha & Prinitha</td>
-	  <td>VijayaVikashini & Pooja</td>
-    </tr>
-	<tr>
-      <th scope="row">10</th>
-      <td>Event Management</td>
-      <td>Ms.M.Kirubha & Ms.D.Bettenna Sheryl Fernando</td>
-	  <td>Bharadwaj & Sneka & Vismitha</td>
-	  <td>Akshaya & Darshini</td>
-	  <td>Archana & Aarthy</td>
-    </tr>
-	<tr>
-      <th scope="row">11</th>
-      <td>Press And Publicity</td>
-      <td>Mr.RN.Devandra Kumar</td>
-	  <td>Hariharan & Mahendran</td>
-	  <td>Harshan & Janarthan & Karthikeyan</td>
-	  <td>Ashwin & Nandha Kumar</td>
-    </tr>
-	<tr>
-      <th scope="row">12</th>
-      <td>Transport,Accomadation,And Hospitality</td>
-      <td>Ms.VS.Ester Pushpam</td>
-	  <td>Karthick Raja & Nishanth</td>
-	  <td>Adish & Vivek & Vickram</td>
-	  <td>Deenadhayalan & Naveen</td>
-    </tr>
-	<tr>
-      <th scope="row">13</th>
-      <td>Proceedings</td>
-      <td>Ms.N.Deepika & Ms.Nisha Soms</td>
-	  <td>DivyaLakshmi & Pavithra</td>
-	  <td>Pirathiksha & Rubiya</td>
-	  <td>Mounika & Ramanujam</td>
-    </tr>
-	<tr>
-      <th scope="row">14</th>
-      <td>Seceretarial</td>
-      <td>Ms.K.Sentamarai</td>
-	  <td>Ashwini & Priyanka Priya</td>
-	  <td>Abhisheak & Preethika/td>
-	  <td>RajaSekar & Gowtham</td>
-    </tr>
-	<tr>
-      <th scope="row">15</th>
-      <td>Mc Desk</td>
-      <td>Ms.B.kokila & Ms.S.Sumathi</td>
-	  <td>Akshra & Vishmitha</td>
-	  <td>Lawshiya & Akshaya</td>
-	  <td>Janani & Snegha</td>
-    </tr>
-	<tr>
-      <th scope="row">16</th>
-      <td>Technical Assisstance</td>
-      <td>Ms.NS.Kavitha</td>
-	  <td>Hariharan & Dhanya</td>
-	  <td>Naveen Kumar & Shyam</td>
-	  <td>Anish & Srijith</td>
-    </tr>
-	<tr>
-      <th scope="row">17</th>
-      <td>Website</td>
-      <td>Mr.NV.Shibu</td>
-	  <td>Sindhuja & Sabareeshwaran</td>
-	  <td>Praveen Kumar & Vijay Krishnaa & Praveen</td>
-	  <td>Sree Vishnu & Mohan Singh</td>
-    </tr>
-	<tr>
-      <th scope="row">18</th>
-      <td>A/V & Photograpghy</td>
-      <td>Ms.A.Sumithra</td>
-	  <td>Hafizullah & Manoj Kumar</td>
-	  <td>RajeshKannan & Pranesh</td>
-	  <td>Muthukumar & Suthish</td>
-    </tr>
-	<tr>
-      <th scope="row">19</th>
-      <td>App Development</td>
-      <td>Mr.NV.Shibu</td>
-	  <td>Guru vedha Ramanan & Anagha Shankar</td>
-	  <td>Hari Prashanth & Praveena</td>
-	  <td>Sri Hariraj & Lawrence</td>
-    </tr>
-	<tr>
-      <th scope="row">20</th>
-      <td>Resource Person Pool Team</td>
-      <td>Ms.S.Revathi</td>
-	  <td>Chithra & Sowbarnika</td>
-	  <td>Karthik &Vijay Krishana & Sudharsan</td>
-	  <td>Jeeva & Vignesh</td>
-    </tr>
-	<tr>
-      <th scope="row">21</th>
-      <td>FeedBack & Analysis</td>
-      <td>Ms.SJ.Savitha</td>
-	  <td>Ramya & Vishali</td>
-	  <td>Nandhini & Yazhini & Rajadarshini</td>
-	  <td>Nithin & Ashwath</td>
-    </tr>
-	<tr>
-      <th scope="row">22</th>
-      <td>On Spot Report</td>
-      <td>Ms.MP.Geetha & Ms.S.Hebziba Jeba Rani</td>
-	  <td>Deepan & Nivetha</td>
-	  <td>DevaDharshini & Shivalini & Sushimitha</td>
-	  <td>Narmadha & Nisha</td>
-    </tr>
-  </tbody>
-  </table>
-</div>
-</div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>Event Handlers</title>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="table-responsive" style="background-color:#f6f4e6">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Committee</th>
+                        <th scope="col">Faculty Incharge</th>
+                        <th scope="col">Final Year</th>
+                        <th scope="col">Third Year</th>
+                        <th scope="col">Second Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Financial</td>
+                        <td>Faculty Incharge- Tekace</td>
+                        <td>Secretary & Treasurer</td>
+                        <td>Joint Secretary & Joint Treasurer</td>
+                        <td>Additional Joint Secretary & Additional Joint Treasurer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Auditing</td>
+                        <td>Faculty Incharge- Tekace</td>
+                        <td>Secretary & Treasurer</td>
+                        <td>Joint Secretary & Joint Treasurer</td>
+                        <td>Additional Joint Secretary & Additional Joint Treasurer</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Momento,Badge,Invitation,Brochure</td>
+                        <td>Ms.D.Bettenna Sheryl Fernando</td>
+                        <td>Swetha & Pooja</td>
+                        <td>Srivarsha & Gayathri</td>
+                        <td>Harshini & Shymala</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Certificate</td>
+                        <td>Ms.K.Saranya</td>
+                        <td>Kaviya Sri Samyuktha</td>
+                        <td>Shivaranjini,Binitha,Praveena</td>
+                        <td>Mounika & Swetha</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Newsletter</td>
+                        <td>Mr.S.Oswalt Manoj</td>
+                        <td>Keertha & Swetha</td>
+                        <td>DevaDharshini & Vishal</td>
+                        <td>Harshitha & Vigneshwaran</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Discipline</td>
+                        <td>Mr.Jim Mathew Philip</td>
+                        <td>Velmurugan & Santhoshini</td>
+                        <td>Sathya & TamilSelvan</td>
+                        <td>Balasubramanian & Vishnuraj</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>Catering</td>
+                        <td>Mr.S.Rajesh & Ms.P.Parameshwari</td>
+                        <td>Dhiyanesh & Santhosh</td>
+                        <td>Thiruppathi & Sanjay</td>
+                        <td>Karthik & Raju</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Hall Arrangement,Decoration</td>
+                        <td>Ms.M.Kirubha</td>
+                        <td>Ashwadthy & Akshara</td>
+                        <td>Binitha & Gayathri & Swetha & Shivaranjini</td>
+                        <td>Shibu & Gayathri</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Reception And Regitration</td>
+                        <td>Ms.KM.Kirthika</td>
+                        <td>Jeevitha & Narmadha</td>
+                        <td>Samyuuktha & Prinitha</td>
+                        <td>VijayaVikashini & Pooja</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>Event Management</td>
+                        <td>Ms.M.Kirubha & Ms.D.Bettenna Sheryl Fernando</td>
+                        <td>Bharadwaj & Sneka & Vismitha</td>
+                        <td>Akshaya & Darshini</td>
+                        <td>Archana & Aarthy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11</th>
+                        <td>Press And Publicity</td>
+                        <td>Mr.RN.Devandra Kumar</td>
+                        <td>Hariharan & Mahendran</td>
+                        <td>Harshan & Janarthan & Karthikeyan</td>
+                        <td>Ashwin & Nandha Kumar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12</th>
+                        <td>Transport,Accomadation,And Hospitality</td>
+                        <td>Ms.VS.Ester Pushpam</td>
+                        <td>Karthick Raja & Nishanth</td>
+                        <td>Adish & Vivek & Vickram</td>
+                        <td>Deenadhayalan & Naveen</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13</th>
+                        <td>Proceedings</td>
+                        <td>Ms.N.Deepika & Ms.Nisha Soms</td>
+                        <td>DivyaLakshmi & Pavithra</td>
+                        <td>Pirathiksha & Rubiya</td>
+                        <td>Mounika & Ramanujam</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">14</th>
+                        <td>Seceretarial</td>
+                        <td>Ms.K.Sentamarai</td>
+                        <td>Ashwini & Priyanka Priya</td>
+                        <td>Abhisheak & Preethika/td>
+                        <td>RajaSekar & Gowtham</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">15</th>
+                        <td>Mc Desk</td>
+                        <td>Ms.B.kokila & Ms.S.Sumathi</td>
+                        <td>Akshra & Vishmitha</td>
+                        <td>Lawshiya & Akshaya</td>
+                        <td>Janani & Snegha</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">16</th>
+                        <td>Technical Assisstance</td>
+                        <td>Ms.NS.Kavitha</td>
+                        <td>Hariharan & Dhanya</td>
+                        <td>Naveen Kumar & Shyam</td>
+                        <td>Anish & Srijith</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Website</td>
+                        <td>Mr.NV.Shibu</td>
+                        <td>Sindhuja & Sabareeshwaran</td>
+                        <td>Praveen Kumar & Vijay Krishnaa & Praveen</td>
+                        <td>Sree Vishnu & Mohan Singh</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">18</th>
+                        <td>A/V & Photograpghy</td>
+                        <td>Ms.A.Sumithra</td>
+                        <td>Hafizullah & Manoj Kumar</td>
+                        <td>RajeshKannan & Pranesh</td>
+                        <td>Muthukumar & Suthish</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">19</th>
+                        <td>App Development</td>
+                        <td>Mr.NV.Shibu</td>
+                        <td>Guru vedha Ramanan & Anagha Shankar</td>
+                        <td>Hari Prashanth & Praveena</td>
+                        <td>Sri Hariraj & Lawrence</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Resource Person Pool Team</td>
+                        <td>Ms.S.Revathi</td>
+                        <td>Chithra & Sowbarnika</td>
+                        <td>Karthik &Vijay Krishana & Sudharsan</td>
+                        <td>Jeeva & Vignesh</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">21</th>
+                        <td>FeedBack & Analysis</td>
+                        <td>Ms.SJ.Savitha</td>
+                        <td>Ramya & Vishali</td>
+                        <td>Nandhini & Yazhini & Rajadarshini</td>
+                        <td>Nithin & Ashwath</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">22</th>
+                        <td>On Spot Report</td>
+                        <td>Ms.MP.Geetha & Ms.S.Hebziba Jeba Rani</td>
+                        <td>Deepan & Nivetha</td>
+                        <td>DevaDharshini & Shivalini & Sushimitha</td>
+                        <td>Narmadha & Nisha</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
